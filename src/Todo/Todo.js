@@ -58,7 +58,7 @@ const Todo = () => {
   const deleteTasks = (id) => {
     const deleteTodo = todo.filter((t) => t.id !== id);
     setTodo(deleteTodo);
-    toast.success("Todo delete successfull");
+    toast.success(`Todo ${id} deleted successfull`);
   };
 
   return (

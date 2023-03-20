@@ -1,176 +1,199 @@
-.App{
-    width: auto;
-    min-height: 100vh;
-    background-color: #242B2E;
-    display: flex;
-    flex-direction: column;
+.App {
+  width: auto;
+  min-height: 100vh;
+  background-color: #242b2e;
+  display: flex;
+  flex-direction: column;
 }
-.todoPage{
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.todoPage > h1{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    color: white;
+.todoPage {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.nodata{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
+.todoPage > h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
 }
 
-.nodata img{
-    width: 100px;
-    height: 70px;
+.nodata {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
 }
 
-.taskContainer{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+.nodata img {
+  width: 100px;
+  height: 70px;
 }
 
-.taskNumber{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgb(123, 109, 109);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    margin-right: 10px;
-    color: white;
-}
-.tasks{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(199, 199, 199);
-    margin-top: 10px;
-    width: 30rem;
-    height: 35px;
-    padding: 10px;
-    border-radius: 7px;
+.taskContainer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.tasks div{
-    display: flex;
-    align-items: center;
-    font-weight: 300;
-    font-size: 14px !important;
+.taskNumber {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(123, 109, 109);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-right: 10px;
+  color: white;
+}
+.tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(199, 199, 199);
+  margin-top: 10px;
+  width: 30rem;
+  height: 35px;
+  padding: 10px;
+  border-radius: 7px;
 }
 
-
-.tasks .done .title{
-    text-decoration: line-through;
-    opacity: 0.3;
-    float: 1;
+.tasks div {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 14px !important;
 }
 
-
-.statusIons{
-    margin-right: 10px;
-    cursor: pointer;
+.tasks .done .title {
+  text-decoration: line-through;
+  opacity: 0.3;
+  float: 1;
 }
 
-.editbtn{
-    margin-right: 10px;
-    cursor: pointer;
+.statusIons {
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-.deleteTasks{
-    cursor: pointer;
+.editbtn {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.deleteTasks {
+  cursor: pointer;
 }
 
 /*  Add tasks style */
 
-.addtasks{    
-    width: 30rem;
+.addtasks {
+  width: 30rem;
 }
-.additems{
-    display: flex;
-    align-items: center;
-    justify-content: space-between !important;
+.additems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
 }
-.additems > input{
-    width: 23rem;
-    height: 35px;
-    background-color: rgb(199, 199, 199);
-    border: none;
-    border-radius: 5px;
-    outline-width: 1px;
-    outline-color: blue;
-    padding-left: 10px;
+.additems > input {
+  width: 23rem;
+  height: 35px;
+  background-color: rgb(199, 199, 199);
+  border: none;
+  border-radius: 5px;
+  outline-width: 1px;
+  outline-color: blue;
+  padding-left: 10px;
 }
 
-.addtasks .btn{
-    width: 100px;
-    height: 35px;
-    border-radius: 5px;
-    padding: 5px 10px 5px 10px ;
-    cursor: pointer;
-    color: white;
-    background-color: blue;
-    border: none;
-  
+.addtasks .btn {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+  border: none;
 }
 
 /* update tasks  style*/
 
-.updateTasks{
-    width: 30rem;
+.updateTasks {
+  width: 30rem;
 }
 
-.additem{
-     display: flex;
-    align-items: center;
-    justify-content: space-between !important;
+.additem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
 }
 
-.additem input{
-     width: 23rem;
-    height: 35px;
-    background-color: rgb(199, 199, 199);
-    border: none;
-    border-radius: 5px;
-    outline-width: 1px;
-    outline-color: blue;
-    padding-left: 10px;
+.additem input {
+  width: 23rem;
+  height: 35px;
+  background-color: rgb(199, 199, 199);
+  border: none;
+  border-radius: 5px;
+  outline-width: 1px;
+  outline-color: blue;
+  padding-left: 10px;
 }
 
-.additem .btn{
+.additem .btn {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+  border: none;
+  margin: 5px;
+}
+
+.btn-cancle {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  margin: 5px;
+  background-color: rgba(215, 215, 7, 0.813);
+}
+
+@media screen and (max-width: 700px) {
+  .foast-Container {
+    width:200px !important;
+    height: 20px !important;
+    font-size: 12px;
+    float: right;
+  }
+  .tasks {
+    width: 20rem;
+  }
+  .addtasks {
+    width: 20rem;
+  }
+  .additems > input {
+    width: 15rem;
+  }
+  .addtasks .btn {
     width: 100px;
-    height: 35px;
-    border-radius: 5px;
-    padding: 5px 10px 5px 10px ;
-    cursor: pointer;
-    color: white;
-    background-color: blue;
-    border: none;
-    margin: 5px;
-}
-
-.btn-cancle{
-    width: 100px;
-    height: 35px;
-    border-radius: 5px;
-    padding: 5px 10px 5px 10px ;
-    cursor: pointer;
-    color: white;
-    border: none;
-    margin: 5px;
-    background-color: rgba(215, 215, 7, 0.813);
+    margin-left: 5px;
+    padding: 0;
+  }
+  .updateTasks {
+    width: 20rem;
+  }
 }
